@@ -1,1 +1,11 @@
-// i will start this later
+*{
+    margin: 0;
+    padding: 0;
+}
+.yellow-bar{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
