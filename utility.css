@@ -1,23 +1,70 @@
-.bgc-white{
+.bgc-white {
+  background-color: white;
+}
+.bgc-yellow {
+  background-color: #f9d800;
+}
+.bgc-halfwhite {
+  background-color: #fff2cf;
+}
+.bgc-lightpurple {
+  background-color: #C3A6FF;
+}
+.bgc-mediumpurple {
+  background-color: rgb(216, 98, 188);
+}
+.bgc-hardpurple {
+  background-color: rgb(134, 68, 162);
+}
 
-}
-.bgc-yellow{
 
-background-color: #f9d800;
+.c-lightpurple {
+  color: #C3A6FF;
 }
-.bgc-halfwhite{
-    background-color: #FFEBB2;
+.c-mediumpurple {
+  color: rgb(216, 98, 188);
 }
-.bgc-lightpurple{
-    background-color: rgb(229, 155, 233);
-}
-.bgc-mediumpurple{
-    background-color: rgb(216, 98, 188);
-}
-.bgc-hardpurple{
-    background-color: rgb(134, 68, 162);
+.c-hardpurple {
+  color: rgb(134, 68, 162);
 }
 
-.boarde-medium{
-    background-color: rgb(216, 98, 188);
+
+.border-medium {
+  background-color: rgb(216, 98, 188);
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
