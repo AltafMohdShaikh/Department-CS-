@@ -67,7 +67,7 @@
         </div>
       </div>
       <button
-      onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/Bachelor%20of%20Science%20-%20Computer%20Science.pdf'"
+        onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/Bachelor%20of%20Science%20-%20Computer%20Science.pdf'"
         class="course-btn bgc-lightpurple poppins-extrabold"
       >
         More Info
@@ -100,8 +100,18 @@
       <div class="timetable">
         <h2 class="poppins-medium">TimeTable</h2>
         <div class="box">
-          <button  onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/timetable/Aided%20TT/FY%20BACHELOR%20OF%20SCIENCE.pdf'" class="poppins-bold">FYCS Timetable</button>
-          <button  onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/timetable/SFC%20TT/SY%20B.Sc%20CS%20TIMETABLE%202023.pdf'" class="poppins-bold">SYCS Timetable</button>
+          <button
+            onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/timetable/Aided%20TT/FY%20BACHELOR%20OF%20SCIENCE.pdf'"
+            class="poppins-bold"
+          >
+            FYCS Timetable
+          </button>
+          <button
+            onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/timetable/SFC%20TT/SY%20B.Sc%20CS%20TIMETABLE%202023.pdf'"
+            class="poppins-bold"
+          >
+            SYCS Timetable
+          </button>
           <button
             onclick="window.location.href='https://www.dnyanasadhanacollege.org/SeniorCollege/pdf/timetable/Aided%20TT/FY%20BACHELOR%20OF%20SCIENCE.pdf'"
             class="poppins-bold"
@@ -119,7 +129,31 @@
         </div>
       </div>
     </div>
+<div class="form-box">
+  <div class="text">
+    <h1 class="poppins-bold">Submit Your Issues</h1>
+  </div>
+    <div class="form-container">
+      <form class="poppins-regular" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="fa4b95a5-b274-4595-9421-fc540b4e7ba3"
+        />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button class="poppins-bold" type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+  </div>
     <footer>
       <div class="block">
         <img width="100%" src="assets/college.png" alt="" />

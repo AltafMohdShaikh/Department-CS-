@@ -123,7 +123,9 @@ td {
   background-color: #c3a6ff;
   color: white;
 }
+
 button:hover{
+
     cursor: pointer;
     width: 150px;
 }
@@ -135,16 +137,67 @@ button:hover{
   background-color: white;
 }
 
+
+
+
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.form-container {
+  margin-top: 20px;
+  /* background-color: #7f5dc2; */
+  border: 2px solid #7f5dc2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #7f5dc2;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #bca4eb;
+}
+
+#btn{
+  background-color: #7f5dc2;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+
 .block {
   position: relative;
+
 }
 .block img {
+  height: 400px;
 }
 .blue-box {
   position: absolute;
   top: 0;
   background-color: #7f5dc2;
   width: 100%;
-  height: 100%;
+  height: 400px;
   filter: opacity(0.5);
 }
