@@ -9,6 +9,11 @@
   gap: 2rem;
   list-style: none;
 }
+@media only screen and (max-width: 800px) {
+  .yellow-bar {
+    display: none;
+  }
+}
 header {
   /* position: relative; */
   display: flex;
@@ -43,6 +48,14 @@ header {
   border-radius: 25px;
   box-shadow: 2px 5px;
 }
+@media only screen and (max-width:800px) {
+.info-box{
+  width: 300px;
+}  
+.info-box table tr{
+  font-size: 1rem;
+}
+}
 td {
   padding: 10px 30px;
 }
@@ -62,6 +75,12 @@ td {
 .eligiblity p {
   margin-top: 10px;
 }
+@media only screen and (max-width: 800px) {
+  .eligiblity {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+}
 .course-btn {
   color: white;
   padding: 10px 30px;
@@ -76,11 +95,18 @@ td {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  
 }
 .notice-card {
   background-color: rgb(235, 235, 235);
   padding: 20px 10px;
+
 }
+/* @media only screen and (max-width: 800px) {
+  .notice-card {
+    width: 300px;
+  }
+} */
 .title {
   margin-bottom: 10px;
 }
@@ -157,6 +183,11 @@ button:hover{
   border-radius: 10px;
   width: 300px;
 }
+@media only screen and (max-width: 800px) {
+  .form-container {
+    width: 250px;
+  }
+}
 
 form {
   display: flex;
@@ -173,11 +204,11 @@ input, textarea {
   border: none;
   border-radius: 5px;
   margin-bottom: 15px;
-  background-color: #bca4eb;
+  background-color: #d8c5ff;
 }
 
 #btn{
-  background-color: #7f5dc2;
+  background-color: #8564c5;
   color: white;
   width: 100px;
   padding: 10px;
@@ -193,6 +224,11 @@ input, textarea {
 .block img {
   height: 400px;
 }
+@media only screen and (max-width: 800px) {
+  .block img {
+    height: 300px;
+  }
+}
 .blue-box {
   position: absolute;
   top: 0;
@@ -200,4 +236,9 @@ input, textarea {
   width: 100%;
   height: 400px;
   filter: opacity(0.5);
+}
+@media only screen and (max-width: 800px) {
+  .blue-box {
+    height: 300px;
+  }
 }
