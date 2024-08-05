@@ -9,10 +9,18 @@
   gap: 2rem;
   list-style: none;
 }
+.yellow-bar li a{
+  text-decoration: none;
+  color: black;
+}
+.yellow-bar li a:hover{
+  color: red;
+}
 @media only screen and (max-width: 800px) {
   .yellow-bar {
     display: none;
   }
+
 }
 header {
   /* position: relative; */
@@ -29,10 +37,18 @@ header {
   text-align: center;
   max-height: 450px;
   font-size: 4rem;
+  transition:font-size 1s;
+}
+.cover:hover{
+  
+  font-size: 4.5rem;
 }
 @media only screen and (max-width: 800px) {
   .cover {
     font-size: 2rem;
+  }
+  .cover:hover{
+    font-size: 2.1rem;
   }
 }
 .course-info {
@@ -95,13 +111,15 @@ td {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+
   
 }
-.notice-card {
+/* .notice-card {
   background-color: rgb(235, 235, 235);
   padding: 20px 10px;
+  width: 600px;
 
-}
+} */
 /* @media only screen and (max-width: 800px) {
   .notice-card {
     width: 300px;
@@ -110,15 +128,35 @@ td {
 .title {
   margin-bottom: 10px;
 }
+/* Sliding container styles */
 .box-slide {
-  display: flex;
-  flex-direction: row;
-  overflow: auto;
-  width: 90vw;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  gap: 30px;
+  display: flex;  
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  gap: 10px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.box-slide::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .box-slide {
+    width: 95vw;
+  }
+}
+
+/* Notice card styles */
+.notice-card {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 15px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .two-block {
@@ -148,19 +186,24 @@ td {
 .timetable button {
   background-color: #c3a6ff;
   color: white;
+  width: 250px;
+  transition: width 1s ease;
 }
 
-button:hover{
 
-    cursor: pointer;
-    width: 150px;
-}
 .syllabus {
   text-align: center;
 }
 .syllabus button {
   color: #c3a6ff;
   background-color: white;
+  width: 250px;
+  transition: width 1s ease;
+}
+button:hover{
+  cursor: pointer;
+  width: 150px;
+ border: 2px solid rgb(255, 174, 0);
 }
 
 
