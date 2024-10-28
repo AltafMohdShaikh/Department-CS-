@@ -24,6 +24,10 @@
   }
 
 }
+
+
+
+
 header {
   /* position: relative; */
   display: flex;
@@ -32,25 +36,28 @@ header {
   width: 100%;
   max-height: 450px;
   contain: content;
+  color: #be6fe8;
 }
 .cover {
   /* /* background-color: black; */
+
   position: absolute;
   text-align: center;
   max-height: 450px;
-  font-size: 4rem;
+  font-size: 5rem;
   transition:font-size 1s;
 }
 .cover:hover{
   
-  font-size: 4.5rem;
+  font-size: 5.5rem;
 }
 @media only screen and (max-width: 800px) {
   .cover {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 300px;
   }
   .cover:hover{
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 }
 .course-info {
@@ -60,11 +67,21 @@ header {
   justify-items: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
 .info-box {
   width: 400px;
   padding: 20px 5px;
   border-radius: 25px;
   box-shadow: 2px 5px;
+  box-shadow: 0 6px 12px rgba(169, 169, 169, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 @media only screen and (max-width:800px) {
 .info-box{
@@ -77,6 +94,17 @@ header {
 td {
   padding: 10px 30px;
 }
+/* Add a slight lift effect on hover */
+.info-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
 .course-box {
   margin-top: 20px;
   display: flex;
@@ -86,6 +114,11 @@ td {
   flex-wrap: wrap;
   gap: 50px;
 }
+
+
+
+
+
 .eligiblity {
   text-align: center;
   width: 400px;
@@ -197,72 +230,88 @@ td {
   text-align: center;
 }
 .syllabus button {
-  color: #c3a6ff;
+  color: #602bc9;
   background-color: white;
   width: 250px;
   transition: width 1s ease;
 }
-button:hover{
-  cursor: pointer;
-  width: 150px;
- border: 2px solid rgb(255, 174, 0);
-}
 
 
 
 
 
-.form-box{
+
+/* Form Section */
+.form-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 50px auto;
 }
 
 .form-container {
-  margin-top: 20px;
-  /* background-color: #7f5dc2; */
-  border: 2px solid #7f5dc2;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
-}
-@media only screen and (max-width: 800px) {
-  .form-container {
-    width: 250px;
-  }
-}
-
-form {
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
 label {
-  color: #7f5dc2;
+  color: #6a1b9a;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
+  width: 100%;
   padding: 10px;
-  border: none;
-  border-radius: 5px;
   margin-bottom: 15px;
-  background-color: #d8c5ff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-#btn{
-  background-color: #8564c5;
+#btn {
+  background-color: #851fc4;
   color: white;
+  border: none;
   width: 100px;
   padding: 10px;
   border-radius: 20px;
-  border: none;
+  transition: background-color 0.3s;
 }
 
 
-.block {
+
+/* Universal button styles */
+button {
+  background-color: #8564c5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  background-color: #6b1898;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 15px #a3a3a3;
+  transform: translateY(-2px) scale(1.05);
+  width: 220px; /* Width expansion */
+}
+
+
+
+
+/* .block {
   position: relative;
 
 }
@@ -285,5 +334,77 @@ input, textarea {
 @media only screen and (max-width: 800px) {
   .blue-box {
     height: 300px;
+  }
+} */
+
+
+
+
+
+
+/* Footer block */
+.block {
+  position: relative;
+  width: 100%;
+  height: 40vh; /* Restrict height to 40% of the screen */
+  overflow: hidden;
+}
+
+.block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the block without distortion */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(114, 23, 133, 0.419); /* Blue tint overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.statutory-board ul {
+  list-style: none;
+  padding: 0;
+}
+
+.statutory-board li {
+  margin-bottom: 8px;
+}
+
+.locate-us p {
+  margin: 5px 0;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+i {
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
   }
 }
