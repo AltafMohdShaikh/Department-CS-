@@ -39,12 +39,13 @@ header {
   color: #be6fe8;
 }
 .cover {
-  /* /* background-color: black; */
+ /* background-color: rgba(0, 0, 0, 0.36);  */
 
   position: absolute;
   text-align: center;
   width: 70%;
-  /* max-height: 450px; */
+  text-shadow: 2px 2px 8px #000000;
+  color: #be6fe8;
   font-size: 5rem;
   transition:font-size 1s;
 }
